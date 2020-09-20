@@ -51,6 +51,7 @@ body {
 .nav-links a {
   color: white;
   font-weight: 700;
+  font-size: 1.3rem;
   text-decoration: none;
   padding-right: 2.5vw;
   padding-left: 2.5vw;
@@ -100,11 +101,6 @@ section {
   margin: auto;
 }
 
-section h2 {
-  color: white;
-  font-size: 5rem;
-}
-
 footer {
   min-height: 20vh;
   background: #131d2c;
@@ -113,6 +109,8 @@ footer {
   margin: auto;
   width: 100%;
   display: flex;
+  position: relative;
+  z-index: 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -145,16 +143,9 @@ footer {
   font-size: 1rem;
 }
 
-.home {
-  background: #17315a;
-}
-
-.projects {
-  background: #0d2244;
-}
-
 .contact {
-  background: #17315a;
+  background: red;
+  text-align: center;
 }
 
 .bubble {
@@ -278,34 +269,36 @@ footer {
 
 .about {
   font-family: "Open Sans", sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   background: #0d2244;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .main-about {
   display: flex;
-  margin: auto;
-  height: 75%;
-  width: 80%;
-}
-
-.about-photo {
-  display: block;
-  width: 50%;
-  height: 100%;
+  min-height: 100vh;
+  padding: 10%;
 }
 
 .about-img {
-  width: 100%;
+  flex-basis: 30%;
   height: 100%;
-  border-radius: 5%;
+  justify-content: center;
+}
+
+.about-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .about-text {
-  display: block;
-  width: 100%;
-  height: 100%;
   margin-left: 5%;
+  flex-basis: 60%;
+  height: 100%;
 }
 
 .about h1 {
@@ -322,6 +315,102 @@ footer {
   text-align: justify;
   color: #d6d9e0;
   line-height: 3rem;
+}
+
+.projects {
+  min-height: 100vh;
+  width: 80%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  margin: auto;
+  display: block;
+}
+
+.projects h2,
+.projects h3 {
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 3.5rem;
+  color: #fe3e57;
+}
+
+.projects h3 {
+  margin-top: 1.5rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.projects h4 {
+  font-size: 1rem;
+}
+
+.projects h5 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.works {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.all-works {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 30px;
+  margin-top: 6rem;
+  width: 100%;
+}
+
+.project-card {
+  justify-self: stretch;
+  display: block;
+  height: 100%;
+  position: relative;
+}
+
+.project-img {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  cursor: pointer;
+}
+
+.card-content {
+  background-color: #23406b;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.card-content h4,
+.card-content h5 {
+  text-align: center;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+.view-more {
+  width: 180px;
+  height: 55px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  background-color: #fe3e57;
+  margin-top: 30px;
+  margin-right: 2%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 6px 21px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* width */
@@ -344,7 +433,7 @@ footer {
   background: #555;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 970px) {
   .burger {
     display: block;
     z-index: 2;
@@ -401,8 +490,8 @@ footer {
   }
 
   .buttons {
-    justify-content: space-around;
-    margin-top: 4%;
+    justify-content: center;
+    margin-top: 2%;
   }
 
   .main-home {
@@ -450,14 +539,13 @@ footer {
     margin-top: 10%;
   }
 
-  .main-about {
+  .about {
     flex-direction: column;
   }
 
-  .about-photo {
-    width: 100%;
-    margin: auto;
-    height: 50%;
+  .main-about {
+    flex-direction: column;
+    padding-top: 10%;
   }
 
   .about-text h1 {
@@ -465,13 +553,77 @@ footer {
     text-align: center;
   }
 
+  .about-me {
+    font-size: 4vw;
+    line-height: 2rem;
+  }
+
   .about-text {
     margin-left: 0;
     text-align: center;
   }
 
-  .about-me {
-    font-size: 15px;
-    line-height: 2rem;
+  .about-img {
+    margin: auto;
+  }
+
+  .about-img img {
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 500px;
+    max-height: 500px;
+    width: 50vw;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .main h3 {
+    font-size: 2rem;
+  }
+
+  .main h2 {
+    font-size: 1.5rem;
+  }
+
+  .main h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-img img {
+    min-width: 300px;
+    min-height: 400px;
+    max-width: 700px;
+    max-height: 700px;
+    width: 30vw;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projects {
+    padding-top: 20%;
+  }
+
+  .main-about {
+    padding-top: 20%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #logo {
+    font-size: 1rem;
+  }
+
+  .main h3 {
+    font-size: 1.5rem;
+  }
+
+  .main h2 {
+    font-size: 1rem;
+  }
+
+  .main h1 {
+    font-size: 1rem;
   }
 }
