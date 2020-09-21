@@ -65,3 +65,25 @@ burger.addEventListener("click", () => {
     main.style.display = "block";
   }
 });
+
+//View more projects
+const vm = document.querySelector(".view-more");
+const pcard = document.querySelectorAll(".project-card");
+const allworks = document.querySelector(".allworks");
+const vmt = document.getElementById("view-more-tabs");
+
+vm.addEventListener("click", () => {
+  document.querySelectorAll(".project-card").forEach(function (element) {
+    if (element.classList.contains("hidden")) {
+      element.classList.remove("hidden");
+      element.classList.add("visible");
+      vmt.innerText = "Zobacz mniej";
+    } else if (element.classList.contains("visible")) {
+      element.classList.remove("visible");
+      element.classList.add("hidden");
+      vmt.innerText = "Zobacz Więcej";
+    }
+  });
+});
+{
+}

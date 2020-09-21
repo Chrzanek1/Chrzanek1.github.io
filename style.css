@@ -363,6 +363,7 @@ footer {
   gap: 30px;
   margin-top: 6rem;
   width: 100%;
+  transition: all 1s;
 }
 
 .project-card {
@@ -370,6 +371,14 @@ footer {
   display: block;
   height: 100%;
   position: relative;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
 
 .project-img {
