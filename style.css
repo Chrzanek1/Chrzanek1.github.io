@@ -368,7 +368,7 @@ footer {
 
 .project-card {
   justify-self: stretch;
-  display: block;
+  /* display: block; */
   height: 100%;
   position: relative;
 }
@@ -616,6 +616,10 @@ footer {
 
   .main-about {
     padding-top: 20%;
+  }
+
+  .all-works {
+    grid-template-columns: 1fr;
   }
 }
 
