@@ -634,6 +634,7 @@ footer {
 
   .about-text h1 {
     font-size: 8vw;
+    margin-top: 4%;
   }
 
   .about-text p {
@@ -655,6 +656,7 @@ footer {
   }
 
   .projects {
+    padding-top: 40%;
     /* min-height: auto; */
   }
 
