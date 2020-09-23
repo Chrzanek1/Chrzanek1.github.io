@@ -73,15 +73,20 @@ const allworks = document.querySelector(".allworks");
 const vmt = document.getElementById("view-more-tabs");
 
 vm.addEventListener("click", () => {
+  if (vmt.innerText === "Zobacz więcej") {
+    vmt.innerText = "Zobacz mniej";
+  } else {
+    vmt.innerText = "Zobacz więcej";
+  }
   document.querySelectorAll(".project-card").forEach(function (element) {
     if (element.classList.contains("hidden")) {
       element.classList.remove("hidden");
       element.classList.add("visible");
-      vmt.innerText = "Zobacz mniej";
+      // vmt.innerText = "Zobacz mniej";
     } else if (element.classList.contains("visible")) {
       element.classList.remove("visible");
       element.classList.add("hidden");
-      vmt.innerText = "Zobacz Więcej";
+      // vmt.innerText = "Zobacz Więcej";
     }
   });
 });
