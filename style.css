@@ -374,8 +374,8 @@ footer {
 .project-card {
   justify-self: stretch;
   /* display: block; */
-  height: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .always-vis {
@@ -406,6 +406,9 @@ footer {
   bottom: 0;
   right: 0;
   left: 0;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-content h4,
