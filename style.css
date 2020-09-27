@@ -144,9 +144,90 @@ footer {
 }
 
 .contact {
-  background: red;
+  background: #0d2244;
+  min-height: 100vh;
+  display: block;
+}
+
+.contact h1 {
   text-align: center;
-  display: none;
+  margin: auto;
+  font-size: 3.5rem;
+  color: #fe3e57;
+  width: 100%;
+  /* padding-top: 10%; */
+}
+
+.main-contact {
+  align-items: center;
+  padding: 10%;
+  margin: auto;
+  justify-content: center;
+  display: block;
+}
+
+.contact-wrapper {
+  margin-top: 3rem;
+  display: flex;
+  width: 100%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.contact-img {
+  margin-left: 30px;
+  width: 100%;
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-me {
+  display: flex;
+  margin: auto;
+  height: 80%;
+  width: 100%;
+}
+
+.input {
+  font-family: "Open Sans", sans-serif;
+  padding-left: 20px;
+  color: white;
+  font-size: 1rem;
+  justify-content: center;
+  margin-top: 30px;
+  height: 4rem;
+  background-color: #294572;
+  border: none;
+  border-radius: 5px;
+}
+
+#message {
+  height: 8rem;
+  resize: vertical;
+  padding-top: 20px;
+}
+
+.submit {
+  width: 180px;
+  height: 55px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  background-color: #fe3e57;
+  margin-top: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  box-shadow: 5px 6px 21px 6px rgba(0, 0, 0, 0.2);
 }
 
 .bubble {
@@ -629,6 +710,15 @@ footer {
     height: 70vw;
     object-fit: cover;
   }
+
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-img {
+    margin-top: 30px;
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -676,6 +766,14 @@ footer {
   .projects h2 {
     font-size: 1.7rem;
   }
+
+  .submit {
+    width: 100%;
+  }
+
+  .main-contact {
+    padding-top: 20%;
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -709,7 +807,7 @@ footer {
   }
 
   .projects h1 {
-    font-size: 10vw;
+    font-size: 18vw;
   }
 
   .projects h2 {
@@ -750,5 +848,17 @@ footer {
 
   .nav-links a {
     font-size: 10vw;
+  }
+
+  .main-contact h1 {
+    font-size: 18vw;
+  }
+
+  .form-head {
+    font-size: 10vw;
+  }
+
+  .input {
+    font-size: 0.75rem;
   }
 }

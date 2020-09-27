@@ -27,7 +27,7 @@
           <li><a data-page="home" href="#">Home</a></li>
           <li><a data-page="about" href="#about">O mnie</a></li>
           <li><a data-page="projects" href="#projects">Projekty</a></li>
-          <li><a data-page="contact" href="#footer">Kontakt</a></li>
+          <li><a data-page="contact" href="#contact">Kontakt</a></li>
         </ul>
       </div>
       <div class="burger">
@@ -123,7 +123,22 @@
         </div>
       </section>
       <section class="contact" id="contact">
-        <h2>Contact</h2>
+        <div class="main-contact">
+          <h1>Kontakt</h1>
+          <div class="contact-wrapper">
+            <form name="contact" action="mail.php" class="contact-form" method="post">
+              <h3 class="form-head">Masz pytanie? Napisz!</h3>
+              <input required="" placeholder="Imię i nazwisko" class="input" type="text" name="name" id="name" autocomplete="off">
+              <input required="" placeholder="Email" class="input" type="email" name="email" id="email" autocomplete="off">
+              <input placeholder="Temat" class="input" type="text" name="subject" id="subject" autocomplete="off">
+              <textarea required="" placeholder="Twoja wiadomość (max 200 znaków)" name="message" class="input" id="message" maxlength="200"></textarea>
+              <button class="submit" type="submit">Wyślij Email</button>
+            </form>
+            <div div class="contact-img">
+              <img class="contact-me" src="./mail_me.svg" alt="">
+            </div>
+          </div>
+        </div>
       </section>
       <footer id="footer" class="footer">
         <a href="#" class="to-top" alt="Go to top">
