@@ -131,6 +131,7 @@ footer {
 
 .footer-icons i:hover {
   color: #fe3e57;
+  transition: all 0.5s;
 }
 
 .copyright {
@@ -217,6 +218,7 @@ footer {
 .submit {
   width: 180px;
   height: 55px;
+  font-weight: 600;
   color: white;
   border-radius: 5px;
   border: none;
@@ -228,6 +230,12 @@ footer {
   justify-content: center;
   font-size: 16px;
   box-shadow: 5px 6px 21px 6px rgba(0, 0, 0, 0.2);
+}
+
+.submit:hover {
+  color: #fe3e57;
+  background-color: white;
+  transition: all 0.5s;
 }
 
 .bubble {
@@ -285,6 +293,7 @@ footer {
   width: 180px;
   height: 55px;
   color: white;
+  font-weight: 600;
   border-radius: 5px;
   border: none;
   background-color: #fe3e57;
@@ -297,6 +306,12 @@ footer {
   box-shadow: 5px 6px 21px 6px rgba(0, 0, 0, 0.2);
 }
 
+.CV-btn:hover {
+  color: #fe3e57;
+  background-color: white;
+  transition: all 0.5s;
+}
+
 .divider {
   width: 5px;
   height: auto;
@@ -305,6 +320,7 @@ footer {
 .about-btn {
   width: 180px;
   height: 55px;
+  font-weight: 600;
   color: white;
   border-radius: 5px;
   border: none;
@@ -316,6 +332,12 @@ footer {
   justify-content: center;
   font-size: 16px;
   box-shadow: 5px 6px 21px 6px rgba(0, 0, 0, 0.2);
+}
+
+.about-btn:hover {
+  color: #294572;
+  background-color: white;
+  transition: all 0.5s;
 }
 
 .home h3 {
@@ -502,6 +524,7 @@ footer {
 .view-more {
   width: 180px;
   height: 55px;
+  font-weight: 600;
   color: white;
   border-radius: 5px;
   border: none;
@@ -512,6 +535,12 @@ footer {
   align-items: center;
   justify-content: center;
   box-shadow: 5px 6px 21px 6px rgba(0, 0, 0, 0.2);
+}
+
+.view-more:hover {
+  color: #fe3e57;
+  background-color: white;
+  transition: all 0.5s;
 }
 
 #view-more-tabs {
