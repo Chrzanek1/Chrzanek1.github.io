@@ -44,6 +44,7 @@ function scrollFunction() {
 //   }
 // });
 
+//mobile burger v2.0
 const burger = document.querySelector(".burger");
 const navelem = document.querySelector(".nav-elem");
 const body = document.querySelector("body");
@@ -90,5 +91,3 @@ vm.addEventListener("click", () => {
     }
   });
 });
-{
-}

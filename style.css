@@ -238,6 +238,10 @@ footer {
   transition: all 0.5s;
 }
 
+.form-head span {
+  color: #fe3e57;
+}
+
 .bubble {
   position: absolute;
 }
@@ -468,7 +472,7 @@ footer {
 }
 .all-works {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(399px, 1fr));
   gap: 30px;
   margin-top: 6rem;
   width: 100%;
@@ -512,6 +516,53 @@ footer {
   overflow: hidden;
   justify-content: center;
   align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 99%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #051020;
+}
+
+.project-card:hover .overlay {
+  opacity: 0.97;
+}
+
+.project-links i {
+  color: #fe3e57;
+  font-size: 1rem;
+  margin-top: 40px;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 2rem;
+}
+
+.project-links i:hover {
+  color: white;
+  transition: all 0.5s;
+}
+
+.project-links a:visited {
+  text-decoration: transparent;
+}
+
+.text {
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -20%);
+  -ms-transform: translate(-50%, -20%);
+  transform: translate(-50%, -20%);
+  text-align: center;
 }
 
 .card-content h4,
@@ -844,11 +895,11 @@ footer {
   }
 
   .projects h4 {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 
   .projects h5 {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   .view-more {
@@ -884,7 +935,7 @@ footer {
   }
 
   .form-head {
-    font-size: 10vw;
+    font-size: 6vw;
   }
 
   .input {
