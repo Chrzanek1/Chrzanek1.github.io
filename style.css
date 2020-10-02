@@ -854,6 +854,23 @@ footer {
   .main-contact {
     padding-top: 20%;
   }
+
+  .card-content h4 {
+    font-size: 3vw;
+  }
+
+  .card-content h5 {
+    font-size: 3vw;
+  }
+
+  .project-links i {
+    font-size: 4vw;
+    margin-top: 2%;
+  }
+
+  .text {
+    font-size: 4vw;
+  }
 }
 
 @media screen and (max-width: 350px) {
