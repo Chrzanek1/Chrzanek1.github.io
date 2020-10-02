@@ -480,7 +480,6 @@ footer {
 
 .project-card {
   justify-self: stretch;
-  /* display: block; */
   position: relative;
   overflow: hidden;
 }
